@@ -27,11 +27,7 @@ class Song
      @genre = genre
   end
   attr_accessor :name, :artist, :genre
-#attr_reader :name, :artist, :genre
 
-# def name
-#   @name
-# end
 def count
   @@count.length
 end
