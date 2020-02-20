@@ -22,6 +22,7 @@ attr_accessor :name, :artist, :genre
      @@count += 1
      @@artists << artist
      @@genres << genre
+     @name=name
   end
 #attr_reader :name, :artist, :genre
 
