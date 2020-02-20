@@ -17,17 +17,18 @@ class Song
     @@genres
   end
 #binding.pry
-attr_accessor :name, :artist, :genre
+
   def initialize (name, artist, genre)
      @@count += 1
      @@artists << artist
      @@genres << genre
      @name=name
   end
+  attr_accessor :name, :artist, :genre
 #attr_reader :name, :artist, :genre
 
 # def name
-#   @name = name
+#   @name
 # end
 def count
   @@count.length
