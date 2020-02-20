@@ -7,12 +7,12 @@ class Song
     @@count
   end
 
-  @@artists = {}
+  @@artists = []
   def self.artists
     @@artists
   end
 
-  @@genres = {}
+  @@genres = []
   def self.genres
     @@genres
   end
@@ -34,7 +34,11 @@ def artists
 end
 def genres
   my_genres=[]
-  @@genres.each {|a,b| my_genres<<a}
+  @@genres.each do |a| 
+    if !(my_genres.include(a))
+      my_genres << a
+    end
+  end  
   my_genres
 end
 
