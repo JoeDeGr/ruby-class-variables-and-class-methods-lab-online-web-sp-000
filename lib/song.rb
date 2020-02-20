@@ -21,11 +21,7 @@ class Song
   def initialize (name, artist, genre)
      @@count += 1
      @@artists << artist
-     if @@genres.include?(genre)
-       @@genres[genre] +=1
-     else
-       @@genres[genre] == 1
-     end
+     @@genres << genre
      @name=name
      @artist = artist
      @genre = genre
