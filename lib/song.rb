@@ -35,10 +35,11 @@ def artists
   @@artists
 end
 def genres
-  my_genres=[]
+  my_genres = []
   @@genres.each do |a|
-    if !my_genres.include?(a)
-      my_genres << a
+    if my_genres.include?(a)
+    else
+      my_genres<<a
     end
   end
   my_genres
