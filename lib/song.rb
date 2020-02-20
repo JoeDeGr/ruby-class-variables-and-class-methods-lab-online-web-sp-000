@@ -7,12 +7,12 @@ class Song
     @@count
   end
 
-  @@artists = []
+  @@artists = {}
   def self.artists
     @@artists
   end
 
-  @@genres = []
+  @@genres = {}
   def self.genres
     @@genres
   end
@@ -36,6 +36,6 @@ def genres
 end
 
 def genre_count
-  @@genres.count
+
 end
 end
