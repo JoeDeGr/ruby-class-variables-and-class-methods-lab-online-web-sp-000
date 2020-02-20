@@ -23,6 +23,8 @@ class Song
      @@artists << artist
      @@genres << genre
      @name=name
+     @artist = artist
+     @genre = genre
   end
   attr_accessor :name, :artist, :genre
 #attr_reader :name, :artist, :genre
