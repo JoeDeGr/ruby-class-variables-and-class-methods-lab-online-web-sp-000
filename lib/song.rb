@@ -17,13 +17,14 @@ class Song
     @@genres
   end
 #binding.pry
-  def new (name, artist, genre)
+  def initialize (name, artist, genre)
     # @@count += 1
     # @@artist << artist
     # @@genres << genre
     # @name = name
   end
 #attr_reader :name, :artist, :genre
+
 
 def count
   @@count
@@ -36,6 +37,10 @@ def genres
 end
 
 def genre_count
+
+end
+
+def artist_count
 
 end
 end
