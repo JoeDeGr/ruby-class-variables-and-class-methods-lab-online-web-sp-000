@@ -32,7 +32,7 @@ def count
   @@count.length
 end
 def artists
-  @artists
+  @@artists
 end
 def genres
   my_genres=[]
