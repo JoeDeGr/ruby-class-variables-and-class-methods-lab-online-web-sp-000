@@ -37,7 +37,7 @@ end
 def genres
   my_genres=[]
   @@genres.each do |a|
-    if !(my_genres.include?(a))
+    if !(my_genres.include?("a"))
       my_genres << a
     end
   end
