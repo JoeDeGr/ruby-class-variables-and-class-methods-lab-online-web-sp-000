@@ -38,8 +38,7 @@ def genres
   my_genres = []
   @@genres.each do |a|
     my_genres << a if !(my_genres.include? (a))
-
-
+    binding.pry
   end
   my_genres
 end
